@@ -1,0 +1,3 @@
+img_left_train.hdf5
+Weight/*.caffemodel
+Weight/*.solverstate
