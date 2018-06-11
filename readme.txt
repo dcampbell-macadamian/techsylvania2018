@@ -1,4 +1,5 @@
 Setup for "retina retinopathy" Image Classification
+---------------------------------------------------
 
 Install Caffe (http://caffe.berkeleyvision.org/)
 
@@ -32,3 +33,9 @@ To start training:
 	Windows without GPU:
 		train-cpu.bat
 		
+
+Training Data
+-------------
+
+Original training data source: https://www.kaggle.com/c/diabetic-retinopathy-detection/data
+Processed version of data can be download here: https://drive.google.com/open?id=1YzuUE0EM7u9i4gJpdHssrgx07paxGSI-
