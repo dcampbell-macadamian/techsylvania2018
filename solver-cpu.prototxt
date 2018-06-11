@@ -1,0 +1,14 @@
+net: "train_test_val.prototxt"
+test_iter: 103 # 103x1 = 103 (number of testing images)
+test_interval: 500
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 5000
+display: 50
+max_iter: 7000
+momentum: 0.9
+weight_decay: 0.00005
+snapshot: 1000
+snapshot_prefix: "Weight/caffeModel"
+solver_mode: CPU
