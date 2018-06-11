@@ -392,16 +392,29 @@ layer {
   bottom: "CRCPrediction"
   bottom: "label"
   top: "loss"
+  include {
+    phase: TRAIN
+  }
 }
 
 layer {
-  name: "accuracy"
+  name: "predictedProb"
+  type: "Softmax"
+  bottom: "CRCPrediction" 
+  top: "predictedProbLabel" 
+  include {
+    phase: TEST
+  }
+}
+
+
+layer {
+  name: "testAccuracy"
   type: "Accuracy"
-  bottom: "CRCPrediction"
+  bottom: "predictedProbLabel"
   bottom: "label"
   top: "accuracy"
   include {
     phase: TEST
   }
 }
-
